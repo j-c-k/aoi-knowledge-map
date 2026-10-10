@@ -1,0 +1,204 @@
+version: "0.1"
+last_reviewed: "2026-10-10"
+sources:
+  - id: SRC-001
+    citation: "Flavell, J. H. (1979). Metacognition and cognitive monitoring. American Psychologist, 34(10), 906–911."
+    url: "https://doi.org/10.1037/0003-066X.34.10.906"
+    type: foundational_review
+  - id: SRC-002
+    citation: "Merkebu et al. (2024). The case for metacognitive reflection: a theory integrative review. Advances in Health Sciences Education."
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11368986/"
+    type: integrative_review
+  - id: SRC-003
+    citation: "Fleming, S. M., & Lau, H. C. (2014). How to measure metacognition. Frontiers in Human Neuroscience, 8, 443."
+    url: "https://doi.org/10.3389/fnhum.2014.00443"
+    type: methodological_review
+  - id: SRC-004
+    citation: "Tversky, A., & Kahneman, D. (1974). Judgment under uncertainty: heuristics and biases. Science, 185, 1124–1131."
+    url: "https://doi.org/10.1126/science.185.4157.1124"
+    type: foundational_primary
+  - id: SRC-005
+    citation: "Nickerson, R. S. (1998). Confirmation bias: a ubiquitous phenomenon in many guises. Review of General Psychology, 2, 175–220."
+    url: "https://doi.org/10.1037/1089-2680.2.2.175"
+    type: major_review
+  - id: SRC-006
+    citation: "Kunda, Z. (1990). The case for motivated reasoning. Psychological Bulletin, 108, 480–498."
+    url: "https://doi.org/10.1037/0033-2909.108.3.480"
+    type: major_review
+  - id: SRC-007
+    citation: "Festinger, L. (1957). A Theory of Cognitive Dissonance. Stanford University Press."
+    url: "https://www.sup.org/books/psychology/theory-cognitive-dissonance"
+    type: foundational_book
+  - id: SRC-008
+    citation: "Harmon-Jones, E., & Mills, J. (eds.) (2019). Cognitive Dissonance: Reexamining a Pivotal Theory in Psychology (2nd ed.). APA."
+    url: "https://doi.org/10.1037/0000135-000"
+    type: scholarly_synthesis
+  - id: SRC-009
+    citation: "Johnson, M. K., Hashtroudi, S., & Lindsay, D. S. (1993). Source monitoring. Psychological Bulletin, 114, 3–28."
+    url: "https://doi.org/10.1037/0033-2909.114.1.3"
+    type: major_review
+  - id: SRC-010
+    citation: "Loftus, E. F. (2005). Planting misinformation in the human mind. Learning & Memory, 12, 361–366."
+    url: "https://doi.org/10.1101/lm.94705"
+    type: research_review
+  - id: SRC-011
+    citation: "Schacter, D. L. (1999). The seven sins of memory. American Psychologist, 54, 182–203."
+    url: "https://doi.org/10.1037/0003-066X.54.3.182"
+    type: major_review
+  - id: SRC-012
+    citation: "Barrett, L. F. et al. (2001). Knowing what you're feeling and knowing what to do about it. Cognition & Emotion, 15, 713–724."
+    url: "https://doi.org/10.1080/02699930143000239"
+    type: primary
+  - id: SRC-013
+    citation: "Gross, J. J. (1998). The emerging field of emotion regulation. Review of General Psychology, 2, 271–299."
+    url: "https://doi.org/10.1037/1089-2680.2.3.271"
+    type: foundational_review
+  - id: SRC-014
+    citation: "Sheppes, G., Suri, G., & Gross, J. J. (2015). Emotion regulation and psychopathology. Annual Review of Clinical Psychology, 11, 379–405."
+    url: "https://doi.org/10.1146/annurev-clinpsy-032814-112739"
+    type: major_review
+  - id: SRC-015
+    citation: "Webb, T. L., Miles, E., & Sheeran, P. (2012). Dealing with feeling: a meta-analysis of emotion regulation. Psychological Bulletin, 138, 775–808."
+    url: "https://doi.org/10.1037/a0027600"
+    type: meta_analysis
+  - id: SRC-016
+    citation: "Wood, W., & Rünger, D. (2016). Psychology of habit. Annual Review of Psychology, 67, 289–314."
+    url: "https://doi.org/10.1146/annurev-psych-122414-033417"
+    type: major_review
+  - id: SRC-017
+    citation: "Lally, P. et al. (2010). How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 40, 998–1009."
+    url: "https://doi.org/10.1002/ejsp.674"
+    type: longitudinal_primary
+  - id: SRC-018
+    citation: "Bandura, A. (2006). Toward a psychology of human agency. Perspectives on Psychological Science, 1, 164–180."
+    url: "https://doi.org/10.1111/j.1745-6916.2006.00011.x"
+    type: theoretical_review
+  - id: SRC-019
+    citation: "Bandura, A. (1977). Self-efficacy: toward a unifying theory of behavioral change. Psychological Review, 84, 191–215."
+    url: "https://doi.org/10.1037/0033-295X.84.2.191"
+    type: foundational_review
+  - id: SRC-020
+    citation: "Ryan, R. M., & Deci, E. L. (2000). Self-determination theory and the facilitation of intrinsic motivation. American Psychologist, 55, 68–78."
+    url: "https://doi.org/10.1037/0003-066X.55.1.68"
+    type: major_review
+  - id: SRC-021
+    citation: "Deci, E. L., Olafsen, A. H., & Ryan, R. M. (2017). Self-determination theory in work organizations. Annual Review of Organizational Psychology and Organizational Behavior, 4, 19–43."
+    url: "https://doi.org/10.1146/annurev-orgpsych-032516-113108"
+    type: major_review
+  - id: SRC-022
+    citation: "Heider, F. (1958). The Psychology of Interpersonal Relations. Wiley."
+    url: "https://doi.org/10.1037/10628-000"
+    type: foundational_book
+  - id: SRC-023
+    citation: "Malle, B. F. (2006). The actor-observer asymmetry in attribution: a surprising meta-analysis. Psychological Bulletin, 132, 895–919."
+    url: "https://doi.org/10.1037/0033-2909.132.6.895"
+    type: meta_analysis
+  - id: SRC-024
+    citation: "Cialdini, R. B., & Goldstein, N. J. (2004). Social influence: compliance and conformity. Annual Review of Psychology, 55, 591–621."
+    url: "https://doi.org/10.1146/annurev.psych.55.090902.142015"
+    type: major_review
+  - id: SRC-025
+    citation: "Tankard, M. E., & Paluck, E. L. (2025). The power and pitfalls of social norms. Annual Review of Psychology, 76, 583–606."
+    url: "https://doi.org/10.1146/annurev-psych-020124-120310"
+    type: major_review
+  - id: SRC-026
+    citation: "Spears, R. (2021). Social influence and group identity. Annual Review of Psychology, 72, 367–390."
+    url: "https://doi.org/10.1146/annurev-psych-070620-111818"
+    type: major_review
+  - id: SRC-027
+    citation: "Haslam, S. A., Reicher, S. D., & Birney, M. E. (2017). 50 years of 'Obedience to Authority'. Annual Review of Law and Social Science, 13, 59–78."
+    url: "https://doi.org/10.1146/annurev-lawsocsci-110316-113710"
+    type: critical_review
+  - id: SRC-028
+    citation: "Falk, E. B., & Scholz, C. (2018). Persuasion, influence, and value. Annual Review of Psychology, 69, 329–356."
+    url: "https://doi.org/10.1146/annurev-psych-122216-011821"
+    type: major_review
+  - id: SRC-029
+    citation: "Fraley, R. C. (2019). Attachment in adulthood: recent developments, emerging debates, and future directions. Annual Review of Psychology, 70, 401–422."
+    url: "https://doi.org/10.1146/annurev-psych-010418-102813"
+    type: major_review
+  - id: SRC-030
+    citation: "Mikulincer, M., & Shaver, P. R. (2016). Attachment in Adulthood (2nd ed.). Guilford Press."
+    url: "https://www.guilford.com/books/Attachment-in-Adulthood/Mikulincer-Shaver/9781462525546"
+    type: scholarly_book
+  - id: SRC-031
+    citation: "Kerr, M. E., & Bowen, M. (1988). Family Evaluation. Norton."
+    url: "https://wwnorton.com/books/Family-Evaluation/"
+    type: clinical_theory
+  - id: SRC-032
+    citation: "Weinhold, B. K., & Weinhold, J. B. (2008). Breaking Free of the Co-Dependency Trap. New World Library."
+    url: "https://www.newworldlibrary.com/product/breaking-free-of-the-co-dependency-trap"
+    type: practice_source
+  - id: SRC-033
+    citation: "Weinhold, B. K., & Weinhold, J. B. (2008). The Flight from Intimacy. New World Library."
+    url: "https://www.newworldlibrary.com/product/the-flight-from-intimacy"
+    type: practice_source
+  - id: SRC-034
+    citation: "Dear, G. E., Roberts, C. M., & Lange, L. (2005). Defining codependency: a thematic analysis. Drug and Alcohol Review, 24, 189–198."
+    url: "https://doi.org/10.1080/09595230500105061"
+    type: conceptual_empirical
+  - id: SRC-035
+    citation: "Bornstein, R. F. (2012). From dysfunction to adaptation: an interactionist model of dependency. Annual Review of Clinical Psychology, 8, 291–316."
+    url: "https://doi.org/10.1146/annurev-clinpsy-032511-143058"
+    type: major_review
+  - id: SRC-036
+    citation: "Tangney, J. P., Stuewig, J., & Mashek, D. J. (2007). Moral emotions and moral behavior. Annual Review of Psychology, 58, 345–372."
+    url: "https://doi.org/10.1146/annurev.psych.56.091103.070145"
+    type: major_review
+  - id: SRC-037
+    citation: "Cramer, P. (2000). Defense mechanisms in psychology today. American Psychologist, 55, 637–646."
+    url: "https://doi.org/10.1037/0003-066X.55.6.637"
+    type: major_review
+  - id: SRC-038
+    citation: "Vaillant, G. E. (1992). Ego Mechanisms of Defense. American Psychiatric Press."
+    url: "https://psycnet.apa.org/record/1992-98216-000"
+    type: scholarly_book
+  - id: SRC-039
+    citation: "Leary, M. R. et al. (2017). Cognitive and interpersonal features of intellectual humility. Personality and Social Psychology Bulletin, 43, 793–813."
+    url: "https://doi.org/10.1177/0146167217697695"
+    type: primary_scale_research
+  - id: SRC-040
+    citation: "Porter, T. et al. (2022). Predictors and consequences of intellectual humility. Nature Reviews Psychology, 1, 524–536."
+    url: "https://doi.org/10.1038/s44159-022-00081-9"
+    type: major_review
+  - id: SRC-041
+    citation: "Lerner, J. S. et al. (2015). Emotion and decision making. Annual Review of Psychology, 66, 799–823."
+    url: "https://doi.org/10.1146/annurev-psych-010213-115043"
+    type: major_review
+  - id: SRC-042
+    citation: "Kahneman, D., & Tversky, A. (1979). Prospect theory. Econometrica, 47, 263–291."
+    url: "https://doi.org/10.2307/1914185"
+    type: foundational_primary
+  - id: SRC-043
+    citation: "Thaler, R. H., & Sunstein, C. R. (2008). Nudge. Yale University Press."
+    url: "https://yalebooks.yale.edu/book/9780300262285/nudge/"
+    type: scholarly_book
+  - id: SRC-044
+    citation: "Mertens, S. et al. (2022). The effectiveness of nudging: a meta-analysis. PNAS, 119, e2107346118."
+    url: "https://doi.org/10.1073/pnas.2107346118"
+    type: meta_analysis
+  - id: SRC-045
+    citation: "Hertwig, R., & Grüne-Yanoff, T. (2017). Nudging and boosting. Perspectives on Psychological Science, 12, 973–986."
+    url: "https://doi.org/10.1177/1745691617702496"
+    type: conceptual_review
+  - id: SRC-046
+    citation: "Lord, C. G., Ross, L., & Lepper, M. R. (1979). Biased assimilation and attitude polarization. Journal of Personality and Social Psychology, 37, 2098–2109."
+    url: "https://doi.org/10.1037/0022-3514.37.11.2098"
+    type: classic_primary
+  - id: SRC-047
+    citation: "Langer, E. J. (1975). The illusion of control. Journal of Personality and Social Psychology, 32, 311–328."
+    url: "https://doi.org/10.1037/0022-3514.32.2.311"
+    type: classic_primary
+  - id: SRC-048
+    citation: "Rotter, J. B. (1966). Generalized expectancies for internal versus external control of reinforcement. Psychological Monographs, 80, 1–28."
+    url: "https://doi.org/10.1037/h0092976"
+    type: foundational_primary
+  - id: SRC-049
+    citation: "Gollwitzer, P. M. (1999). Implementation intentions. American Psychologist, 54, 493–503."
+    url: "https://doi.org/10.1037/0003-066X.54.7.493"
+    type: major_review
+  - id: SRC-050
+    citation: "Gollwitzer, P. M., & Sheeran, P. (2006). Implementation intentions and goal achievement: a meta-analysis. Advances in Experimental Social Psychology, 38, 69–119."
+    url: "https://doi.org/10.1016/S0065-2601(06)38002-1"
+    type: meta_analysis
+
