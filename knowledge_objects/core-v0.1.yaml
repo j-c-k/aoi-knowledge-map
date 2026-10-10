@@ -1,0 +1,522 @@
+version: "0.1"
+objects:
+  - id: KO-001
+    title: "Metacognitive monitoring"
+    aliases: ["thinking about thinking", "metakognitív monitorozás"]
+    status: stable
+    evidence_level: A
+    domain: KM-01
+    definition: "Saját tudásunk, megértésünk, bizonyosságunk és gondolkodási folyamataink megfigyelése és értékelése."
+    claim: "A saját bizonyosság és teljesítmény elkülönített vizsgálata javíthatja a hibák felismerését, de az önértékelés önmagában nem mindig pontos."
+    not_evidence_of: ["általános intelligencia", "erkölcsi felsőbbrendűség", "hogy az önértelmezés biztosan helyes"]
+    everyday_signals: ["biztos vagyok benne, de nem tudom megmutatni, miből tudom", "nem veszem észre, hol szűnik meg a tudásom"]
+    reflection_prompts: ["Mennyire vagy biztos, és milyen megfigyelés változtatná meg ezt a bizonyosságot?"]
+    decision_boundary: "Az ASRI kalibrációt kérhet, de nem nyilváníthatja a személy belső értelmezését automatikusan hamisnak."
+    source_ids: [SRC-001, SRC-002, SRC-003]
+    related_ids: [KO-002, KO-030]
+    last_reviewed: "2026-10-10"
+
+  - id: KO-002
+    title: "Metacognitive reflection cycle"
+    aliases: ["reflexiós ciklus"]
+    status: draft
+    evidence_level: B
+    domain: KM-01
+    definition: "Megfigyelés, kérdezés, értelmezés, kipróbálás és újraértékelés ismétlődő folyamata, amely a tapasztalatot tanulási adattá alakítja."
+    claim: "A reflexió akkor több puszta rágódásnál, ha konkrét eseményhez, vizsgálható feltevéshez és későbbi visszacsatoláshoz kapcsolódik."
+    not_evidence_of: ["hogy több önvizsgálat mindig jobb", "hogy minden esemény mély rejtett jelentést hordoz"]
+    everyday_signals: ["ugyanazt az eseményt ismétlem új adat nélkül", "egy felismerést kipróbálható kérdéssé alakítok"]
+    reflection_prompts: ["Mi az az egy megfigyelés, amely a következő hasonló helyzetben ellenőrizhető?"]
+    decision_boundary: "A ciklus szerkezetet ad; nem határozza meg, milyen következtetésre vagy választásra kell jutni."
+    source_ids: [SRC-001, SRC-002]
+    related_ids: [KO-001, KO-032]
+    notes: "ASRI-szintézis; v0.2-ben külön ruminációs határaudit szükséges."
+    last_reviewed: "2026-10-10"
+
+  - id: KO-003
+    title: "Fact–inference–belief–value separation"
+    aliases: ["epistemic layer separation"]
+    status: stable
+    evidence_level: B
+    domain: KM-02
+    definition: "Egy állítás besorolása megfigyelhető tényként, következtetésként, hitként vagy értékválasztásként."
+    claim: "A kategóriák elkülönítése csökkenti annak kockázatát, hogy egy értelmezést pusztán nyelvi magabiztosság miatt tényként kezeljünk."
+    not_evidence_of: ["hogy az értékek értéktelenek", "hogy csak mérhető állítás lehet jelentős"]
+    everyday_signals: ["biztosan lenéz engem", "a család fontosabb — tehát ez objektív igazság"]
+    reflection_prompts: ["Ebből mi volt közvetlenül megfigyelhető, és mit tettél hozzá értelmezésként?"]
+    decision_boundary: "Az ASRI besorolást javasolhat, de a személy értékeit nem minősítheti empirikus hibának."
+    source_ids: [SRC-003, SRC-004]
+    related_ids: [KO-004, KO-030]
+    last_reviewed: "2026-10-10"
+
+  - id: KO-004
+    title: "Cognitive bias as a bounded tendency"
+    aliases: ["kognitív torzítás"]
+    status: stable
+    evidence_level: A
+    domain: KM-03
+    definition: "Rendszeresen megfigyelhető eltérés valamely normatív ítéleti mércétől, meghatározott feladatban vagy környezetben."
+    claim: "A torzítások valószínűségi tendenciák, nem személyiségdiagnózisok; jelenlétük csak konkrét döntési folyamatból következtethető."
+    not_evidence_of: ["butaság", "rosszindulat", "hogy minden gyors ítélet hibás"]
+    everyday_signals: ["egy általános bias-címkével lezárom a vitát", "csak a másik ember torzítását keresem"]
+    reflection_prompts: ["Milyen konkrét ítéleti lépésben jelenhetett meg torzítás, és mi az alternatív magyarázat?"]
+    decision_boundary: "Bias-címke nem használható a másik fél álláspontjának bizonyítás nélküli érvénytelenítésére."
+    source_ids: [SRC-004, SRC-005]
+    related_ids: [KO-005, KO-006]
+    last_reviewed: "2026-10-10"
+
+  - id: KO-005
+    title: "Confirmation bias"
+    aliases: ["megerősítési torzítás"]
+    status: stable
+    evidence_level: A
+    domain: KM-03
+    definition: "A meglévő feltevést támogató információ keresésének, értelmezésének vagy felidézésének aránytalan előnye."
+    claim: "A saját álláspont ellen szóló bizonyíték előzetes megnevezése segíthet láthatóvá tenni a szelektív bizonyítékkezelést."
+    not_evidence_of: ["hogy a meglévő álláspont hamis", "hogy az ellenkező álláspont igaz"]
+    everyday_signals: ["csak támogató példákat gyűjtök", "az ellenpéldát kivételnek, a támogató példát bizonyítéknak nevezem"]
+    reflection_prompts: ["Mi lenne a legerősebb adat a jelenlegi álláspontod ellen?"]
+    decision_boundary: "Az ASRI az információkezelést vizsgálja, nem kényszeríti a felhasználót véleménye megváltoztatására."
+    source_ids: [SRC-005, SRC-046]
+    related_ids: [KO-006, KO-030]
+    last_reviewed: "2026-10-10"
+
+  - id: KO-006
+    title: "Motivated reasoning"
+    aliases: ["motivált érvelés"]
+    status: stable
+    evidence_level: B
+    domain: KM-03
+    definition: "Olyan következtetési folyamat, amelyben egy kívánt eredmény befolyásolja az információ keresését és értékelését, miközben az érvelés racionálisnak tűnhet."
+    claim: "A motiváció nem teszi automatikusan hamissá a következtetést, de indokolja az evidencia szimmetrikusabb ellenőrzését."
+    not_evidence_of: ["tudatos hazugság", "hogy az érzelem mindig megrontja a gondolkodást"]
+    everyday_signals: ["ugyanazt a bizonyítékot más mércével mérem, ha nekem kedvez", "az indokaim a döntés után jelennek meg"]
+    reflection_prompts: ["Ugyanezt a bizonyítékot mennyire találnád erősnek, ha az ellenkező eredményt támogatná?"]
+    decision_boundary: "Az ASRI motivációs hipotézist csak kérdésként vethet fel; rejtett szándékot nem állíthat tényként."
+    source_ids: [SRC-006, SRC-046]
+    related_ids: [KO-005, KO-007]
+    last_reviewed: "2026-10-10"
+
+  - id: KO-007
+    title: "Cognitive dissonance and rationalization"
+    aliases: ["kognitív disszonancia", "racionalizáció"]
+    status: stable
+    evidence_level: B
+    domain: KM-03
+    definition: "Feszültség egymással össze nem illő meggyőződések, önkép és cselekedet között; racionalizáció az utólagos összeegyeztetés egyik lehetséges módja."
+    claim: "Az indokok időzítésének vizsgálata segíthet elkülöníteni az előzetes döntési okot az utólagos önigazolástól."
+    not_evidence_of: ["képmutató személyiség", "hogy minden utólagos magyarázat hamis"]
+    everyday_signals: ["a döntés után új okokat találok", "a viselkedésemhez igazítom korábbi álláspontom emlékét"]
+    reflection_prompts: ["Ezt az indokot a döntés előtt is meg tudtad volna nevezni?"]
+    decision_boundary: "A rendszer jelezhet időbeli eltérést, de nem nyilváníthatja a személy indokát automatikusan kifogásnak."
+    source_ids: [SRC-007, SRC-008]
+    related_ids: [KO-006, KO-010]
+    last_reviewed: "2026-10-10"
+
+  - id: KO-008
+    title: "Reconstructive memory"
+    aliases: ["rekonstruktív emlékezet"]
+    status: stable
+    evidence_level: A
+    domain: KM-03
+    definition: "Az emlékezés aktív rekonstrukció: a felidézés nem változatlan felvétel lejátszása, és utólagos információ is alakíthatja."
+    claim: "Az élénkség és őszinte bizonyosság nem garantálja az emlék részleteinek pontosságát."
+    not_evidence_of: ["hogy az emlék hamis", "hogy a személy hazudik", "hogy minden múltbeli beszámoló használhatatlan"]
+    everyday_signals: ["nagyon élénken emlékszem, tehát pontos", "későbbi információt az eredeti esemény részeként idézek fel"]
+    reflection_prompts: ["Mi az, amit már az eseménykor rögzítettél, és mi az, amit később tudtál meg?"]
+    decision_boundary: "Az ASRI nem dönthet vitatott történeti tényről pusztán az emlékezet általános esendőségére hivatkozva."
+    source_ids: [SRC-010, SRC-011]
+    related_ids: [KO-009, KO-003]
+    last_reviewed: "2026-10-10"
+
+  - id: KO-009
+    title: "Source monitoring"
+    aliases: ["forrásmonitorozás"]
+    status: stable
+    evidence_level: B
+    domain: KM-02
+    definition: "Annak megítélése, hogy egy emlék, állítás vagy képzet milyen forrásból származik: észlelésből, más személytől, következtetésből vagy elképzelésből."
+    claim: "A forrás explicit visszakeresése csökkentheti a tartalom és eredet automatikus összemosását."
+    not_evidence_of: ["hogy forrás nélkül az állítás hamis", "szándékos megtévesztés"]
+    everyday_signals: ["tudom, de nem emlékszem, honnan", "saját következtetésemet később hallott tényként kezelem"]
+    reflection_prompts: ["Mi a legkorábbi azonosítható forrása ennek az állításnak?"]
+    decision_boundary: "A rendszer kérheti a forrás megjelölését, de a hiányát nem használhatja automatikus cáfolatként."
+    source_ids: [SRC-009, SRC-010]
+    related_ids: [KO-008, KO-003]
+    last_reviewed: "2026-10-10"
+
+  - id: KO-010
+    title: "Emotional awareness and differentiation"
+    aliases: ["érzelmi tudatosság", "emotion differentiation"]
+    status: draft
+    evidence_level: B
+    domain: KM-04
+    definition: "Az aktuális érzelmi állapot és annak árnyalatainak felismerése, megnevezése és elkülönítése a hozzá kapcsolódó gondolattól."
+    claim: "A pontosabb érzelmi megkülönböztetés több szabályozási lehetőséget támogathat, de a címke pontossága kontextus- és mérésfüggő."
+    not_evidence_of: ["hogy az érzés oka ismert", "hogy a megnevezés önmagában megoldja a helyzetet"]
+    everyday_signals: ["csak azt tudom, hogy rossz", "az érzést és az eseményről alkotott ítéletet ugyanannak veszem"]
+    reflection_prompts: ["Mi az érzés neve, mi a testi jel, és mi az ehhez kapcsolt történet?"]
+    decision_boundary: "Az ASRI kínálhat szókincset, de nem közölheti kívülről, mit érez valójában a személy."
+    source_ids: [SRC-012, SRC-014]
+    related_ids: [KO-011, KO-012]
+    notes: "További kulturális és mérési audit szükséges."
+    last_reviewed: "2026-10-10"
+
+  - id: KO-011
+    title: "Emotion as data, not proof"
+    aliases: ["érzelem mint adat"]
+    status: stable
+    evidence_level: B
+    domain: KM-04
+    definition: "Az érzelem jelzi, hogyan értékeljük és éljük meg a helyzetet, de önmagában nem bizonyítja a külső eseményre vonatkozó állítás igazságát."
+    claim: "Az érzelmet és a tényállítást külön vizsgálva az élmény komolyan vehető anélkül, hogy automatikus bizonyítékká válna."
+    not_evidence_of: ["hogy az érzelem irracionális", "hogy az érzelmet figyelmen kívül kell hagyni"]
+    everyday_signals: ["félek, tehát biztosan veszélyes", "megkönnyebbültem, tehát jó döntés volt"]
+    reflection_prompts: ["Mit jelez az érzés a te értékelésedről, és milyen külön adat szól a külső állítás mellett?"]
+    decision_boundary: "Az ASRI nem érvénytelenítheti az élményt, és nem teheti az érzelmi intenzitást igazságmércévé."
+    source_ids: [SRC-012, SRC-041]
+    related_ids: [KO-003, KO-010]
+    last_reviewed: "2026-10-10"
+
+  - id: KO-012
+    title: "Emotion regulation as process"
+    aliases: ["érzelemszabályozás"]
+    status: stable
+    evidence_level: A
+    domain: KM-04
+    definition: "Az érzelmi folyamat különböző pontjain végzett változtatás: helyzet, figyelem, értelmezés vagy válasz módosítása."
+    claim: "Nincs minden helyzetben univerzálisan legjobb stratégia; a cél, időzítés, költség és kontextus számít."
+    not_evidence_of: ["érzelemelnyomás", "állandó nyugalom", "hogy a kellemetlen érzés szabályozási kudarc"]
+    everyday_signals: ["csak akkor avatkozom be, amikor már elárasztott az érzés", "egy stratégiát minden helyzetben alkalmazok"]
+    reflection_prompts: ["A folyamat melyik pontján van most tényleges mozgástered: helyzet, figyelem, értelmezés vagy válasz?"]
+    decision_boundary: "Az ASRI bemutathat stratégiákat és következményeket; nem írhatja elő, melyik érzést kell eltüntetni."
+    source_ids: [SRC-013, SRC-014, SRC-015]
+    related_ids: [KO-010, KO-013]
+    last_reviewed: "2026-10-10"
+
+  - id: KO-013
+    title: "Impulse–response–choice distinction"
+    aliases: ["impulzus és választás elkülönítése"]
+    status: stable
+    evidence_level: B
+    domain: KM-05
+    definition: "A késztetés, a végrehajtott reakció és a tudatosan vállalt választás három elkülöníthető mozzanata."
+    claim: "Egy impulzus jelenléte nem azonos annak végrehajtásával; a késleltetés és előre kialakított válasz növelheti a gyakorlati választási teret."
+    not_evidence_of: ["korlátlan önkontroll", "hogy minden helyzetben volt reális alternatíva"]
+    everyday_signals: ["ezt éreztem, tehát meg kellett tennem", "csak utólag nevezem döntésnek az automatikus reakciót"]
+    reflection_prompts: ["Mi volt a késztetés, mi lett a cselekedet, és hol volt köztük akár egy kis választási pont?"]
+    decision_boundary: "A rendszer nem tételezhet teljes döntési kapacitást kényszer, akut veszély vagy beszűkült állapot esetén."
+    source_ids: [SRC-014, SRC-049, SRC-050]
+    related_ids: [KO-012, KO-014]
+    last_reviewed: "2026-10-10"
+
+  - id: KO-014
+    title: "Habit and automaticity"
+    aliases: ["szokás", "automatikusság"]
+    status: stable
+    evidence_level: A
+    domain: KM-05
+    definition: "Ismételt viselkedés és stabil jelzők kapcsolatából kialakuló, csökkent tudatos kontrollal induló válasz."
+    claim: "A szokás megváltoztatásában gyakran hatékonyabb a kiváltó környezet és az alternatív válasz módosítása, mint a puszta szándék ismétlése."
+    not_evidence_of: ["megváltoztathatatlan személyiség", "felelősség teljes hiánya"]
+    everyday_signals: ["észrevétlenül ugyanazt teszem ugyanabban a helyzetben", "erős szándék mellett is visszatérek a rutinba"]
+    reflection_prompts: ["Melyik konkrét jel indítja a rutint, és milyen más válasz készíthető elő ugyanarra a jelre?"]
+    decision_boundary: "Az ASRI a környezet és rutin vizsgálatát segíti; a személy választja meg, akar-e változtatni."
+    source_ids: [SRC-016, SRC-017]
+    related_ids: [KO-013, KO-032]
+    last_reviewed: "2026-10-10"
+
+  - id: KO-015
+    title: "Agency"
+    aliases: ["cselekvő szerzőség", "ágencia"]
+    status: stable
+    evidence_level: B
+    domain: KM-05
+    definition: "Az ember képessége arra, hogy szándékot alkosson, cselekedjen, hatását megfigyelje és saját szerepét felismerje."
+    claim: "Az agency nem azonos a teljes kontrollal: a korlátozott helyzetben fennmaradó választási és cselekvési pontokat jelöli."
+    not_evidence_of: ["hogy minden rajtam múlik", "hogy a strukturális korlátok jelentéktelenek"]
+    everyday_signals: ["vagy teljes kontrollom van, vagy semmi", "a körülmény magyarázatát a saját szerepem eltüntetésére használom"]
+    reflection_prompts: ["Mi nem állt irányításod alatt, és mi volt az a legkisebb rész, amelyben mégis te cselekedtél?"]
+    decision_boundary: "Az ASRI nem alakíthatja az agency fogalmát áldozathibáztatássá vagy korlátlan felelősség állításává."
+    source_ids: [SRC-018, SRC-019]
+    related_ids: [KO-016, KO-017]
+    last_reviewed: "2026-10-10"
+
+  - id: KO-016
+    title: "Self-efficacy is not agency"
+    aliases: ["önhatékonyság"]
+    status: stable
+    evidence_level: B
+    domain: KM-05
+    definition: "Önhatékonyság: az adott feladat végrehajtására vonatkozó képességhit; nem maga a választás, képesség vagy erkölcsi felelősség."
+    claim: "A magasabb önhatékonyság támogathat kitartást, de lehet tévesen kalibrált, és nem garantál eredményt."
+    not_evidence_of: ["tényleges kompetencia", "helyes cél", "korlátlan agency"]
+    everyday_signals: ["nem hiszem, hogy képes vagyok rá, tehát nincs választásom", "biztos vagyok benne, tehát sikerülni fog"]
+    reflection_prompts: ["A képességedről, a valószínű eredményről vagy a választási szándékodról beszélsz?"]
+    decision_boundary: "A rendszer segíthet szétválasztani a hitet és képességet, de nem erőltethet optimista önképet."
+    source_ids: [SRC-018, SRC-019]
+    related_ids: [KO-001, KO-015]
+    last_reviewed: "2026-10-10"
+
+  - id: KO-017
+    title: "Attribution and responsibility"
+    aliases: ["attribúció", "oksági tulajdonítás"]
+    status: stable
+    evidence_level: B
+    domain: KM-05
+    definition: "Annak magyarázata, hogy egy viselkedést vagy eredményt személyes, helyzeti vagy kölcsönhatási oknak tulajdonítunk."
+    claim: "Az oksági magyarázat és a felelősség normatív megítélése külön kérdés; egyik nem következik automatikusan a másikból."
+    not_evidence_of: ["bűnösség", "felmentés", "hogy egyetlen ok teljes magyarázat"]
+    everyday_signals: ["a körülmény okozta, tehát nem döntöttem", "ő ilyen ember, ezért történt"]
+    reflection_prompts: ["Mi magyarázza a helyzetet, és ettől külön hol volt tényleges választási lehetőség?"]
+    decision_boundary: "Az ASRI nem hozhat jogi vagy erkölcsi ítéletet, és nem egyszerűsítheti a komplex okokat egy címkére."
+    source_ids: [SRC-022, SRC-023]
+    related_ids: [KO-015, KO-018]
+    last_reviewed: "2026-10-10"
+
+  - id: KO-018
+    title: "Locus of control and illusion of control"
+    aliases: ["kontrollhely", "kontrollillúzió"]
+    status: draft
+    evidence_level: C
+    domain: KM-05
+    definition: "A kontrollhely általános elvárás arról, hogy az eredmények mennyiben kapcsolódnak saját cselekvéshez; a kontrollillúzió a ténylegesnél nagyobb befolyás érzete."
+    claim: "A belső kontroll nem minden helyzetben előnyös; pontosabb cél a ténylegesen kontrollálható és nem kontrollálható elemek kalibrálása."
+    not_evidence_of: ["stabil személyiségtípus", "hogy a belső attribúció mindig érettebb"]
+    everyday_signals: ["ha eléggé akarom, biztosan irányíthatom", "semmi közöm az eredményhez"]
+    reflection_prompts: ["Melyik elemre van mérhető ráhatásod, melyikre nincs, és melyik bizonytalan?"]
+    decision_boundary: "Az ASRI nem taníthat totális személyes kontrollt, és nem használhatja a fogalmat strukturális korlátok tagadására."
+    source_ids: [SRC-047, SRC-048]
+    related_ids: [KO-015, KO-017]
+    notes: "A globális kontrollhely mérésének és kulturális érvényességének további auditja szükséges."
+    last_reviewed: "2026-10-10"
+
+  - id: KO-019
+    title: "Autonomous versus controlled motivation"
+    aliases: ["autonóm motiváció", "kontrollált motiváció"]
+    status: stable
+    evidence_level: A
+    domain: KM-05
+    definition: "Autonóm a motiváció, ha a személy akarati egyetértéssel cselekszik; kontrollált, ha külső vagy belső nyomás dominál."
+    claim: "Külső eredetű cél is válhat autonóm módon vállalttá; autonómia nem azonos függetlenséggel vagy mások kizárásával."
+    not_evidence_of: ["önzés", "külső hatások hiánya", "hogy csak élvezetes tevékenység autonóm"]
+    everyday_signals: ["megteszem, mert szégyellném magam, ha nem", "egy külső szabály értelmét sajátként vállalom"]
+    reflection_prompts: ["Ezt azért teszed, mert vállalod az értelmét, vagy mert nyomást próbálsz megszüntetni?"]
+    decision_boundary: "Az ASRI segíthet a motiváció minőségét megvizsgálni; nem mondhatja meg, melyik célt kell sajátként elfogadni."
+    source_ids: [SRC-020, SRC-021]
+    related_ids: [KO-015, KO-024]
+    last_reviewed: "2026-10-10"
+
+  - id: KO-020
+    title: "Conformity and compliance"
+    aliases: ["konformitás", "engedés"]
+    status: stable
+    evidence_level: A
+    domain: KM-06
+    definition: "Viselkedés vagy ítélet társas befolyásra történő igazítása, amely fakadhat pontosságkeresésből, kapcsolatvédelemből vagy önképfenntartásból."
+    claim: "A társas igazodás gyakran közvetett és részben tudattalan; jelenléte nem jelenti, hogy a választott álláspont hamis."
+    not_evidence_of: ["gyengeség", "értelem hiánya", "hogy a csoport álláspontja hibás"]
+    everyday_signals: ["másképp válaszolok nyilvánosan és egyedül", "a többség véleményét bizonyítékként kezelem"]
+    reflection_prompts: ["Mit gondolnál erről, ha nem tudnád, mit gondol a csoportod?"]
+    decision_boundary: "Az ASRI nem értékelheti automatikusan negatívan az együttműködést vagy közös normát."
+    source_ids: [SRC-024, SRC-025]
+    related_ids: [KO-021, KO-022]
+    last_reviewed: "2026-10-10"
+
+  - id: KO-021
+    title: "Authority and engaged followership"
+    aliases: ["tekintélyhatás", "engaged followership"]
+    status: stable
+    evidence_level: B
+    domain: KM-06
+    definition: "A tekintély követése nem mindig vak engedelmesség: gyakran a vezető ügyével vagy csoportjával való azonosulás közvetíti."
+    claim: "A tekintély vizsgálatakor a parancs mellett azt is érdemes nézni, milyen közös célt és identitást fogadott el a követő."
+    not_evidence_of: ["hogy minden engedelmesség azonosulás", "hogy a résztvevő teljesen szabad volt"]
+    everyday_signals: ["szakértő mondta, ezért nem vizsgálom", "erkölcsi ügyként fogadom el a vezető kérését"]
+    reflection_prompts: ["A személy tekintélye, az állítás bizonyítéka vagy a közös ügy iránti azonosulás győzött meg?"]
+    decision_boundary: "Az ASRI nem írhatja át kényszerként vagy szabad választásként azt, amit a tények nem támasztanak alá."
+    source_ids: [SRC-024, SRC-027]
+    related_ids: [KO-020, KO-022]
+    last_reviewed: "2026-10-10"
+
+  - id: KO-022
+    title: "Social identity and identity-protective cognition"
+    aliases: ["csoportidentitás", "identitásvédő gondolkodás"]
+    status: draft
+    evidence_level: B
+    domain: KM-06
+    definition: "A csoporthoz tartozás alakíthatja, mely információt tartjuk hitelesnek és mely álláspont veszélyezteti az önazonosságot."
+    claim: "Egy nézet megváltoztatásának társas és identitásköltsége különválasztható a nézet evidenciális erősségétől."
+    not_evidence_of: ["hogy nincs valódi meggyőződés", "hogy minden csoporttagság torzít"]
+    everyday_signals: ["az állítás kritikáját a csoportom elleni támadásnak érzem", "forrást a csoportja alapján fogadok el"]
+    reflection_prompts: ["Mi kerülne veszélybe a hovatartozásodban, ha ez az állítás hamisnak bizonyulna?"]
+    decision_boundary: "Az ASRI nem tulajdoníthat identitásvédő motivációt bizonyíték nélkül, és nem kérhet identitásfeladást."
+    source_ids: [SRC-026, SRC-028]
+    related_ids: [KO-006, KO-020]
+    notes: "A konstrukció operacionalizálását és politikai alkalmazásának torzításait külön auditálni kell."
+    last_reviewed: "2026-10-10"
+
+  - id: KO-023
+    title: "Persuasion and subjective value"
+    aliases: ["meggyőzés", "befolyás"]
+    status: stable
+    evidence_level: B
+    domain: KM-06
+    definition: "A kommunikáció befolyása részben azon múlik, milyen várható értéket tulajdonít a befogadó az üzenetnek és annak társas következményeinek."
+    claim: "Az üzenet vonzereje és igazsága külön dimenzió; a társas jutalom növelheti az elfogadást anélkül, hogy az evidencia erősödne."
+    not_evidence_of: ["manipuláció minden meggyőzésben", "hogy a vonzó állítás hamis"]
+    everyday_signals: ["azért hiszem el, mert jó érzést vagy csoporttagságot ígér", "a megoszthatóságot hitelességgel azonosítom"]
+    reflection_prompts: ["Mi az üzenet bizonyítéka, és mi az a jutalom vagy költség, amely az elfogadásához kapcsolódik?"]
+    decision_boundary: "Az ASRI elemezheti a befolyási helyzetet, de maga nem használhat rejtett személyre szabott nyomásgyakorlást."
+    source_ids: [SRC-024, SRC-028]
+    related_ids: [KO-020, KO-031]
+    last_reviewed: "2026-10-10"
+
+  - id: KO-024
+    title: "Adult attachment patterns"
+    aliases: ["felnőtt kötődési minták"]
+    status: stable
+    evidence_level: A
+    domain: KM-07
+    definition: "A közelség, elérhetőség és biztonság kezelésében megfigyelhető, dimenzionális és részben kapcsolatfüggő mintázatok."
+    claim: "A kötődési szorongás és elkerülés hasznos leíró dimenziók, de nem végleges személyiségtípusok és nem magyaráznak meg minden kapcsolatot."
+    not_evidence_of: ["diagnózis", "változtathatatlan identitás", "egy konkrét gyermekkori ok bizonyossága"]
+    everyday_signals: ["közelségi bizonytalanságban fokozom a megerősítéskeresést", "távolsággal próbálom csökkenteni a sérülékenységet"]
+    reflection_prompts: ["Ebben a konkrét kapcsolatban a közelség vagy a távolság milyen veszélyt jelent számodra?"]
+    decision_boundary: "Az ASRI nem címkézhet kötődési típust egyetlen történetből, és nem vezethet le biztos gyermekkori okot."
+    source_ids: [SRC-029, SRC-030]
+    related_ids: [KO-025, KO-027]
+    last_reviewed: "2026-10-10"
+
+  - id: KO-025
+    title: "Boundaries and differentiation"
+    aliases: ["határok", "differentiation of self"]
+    status: draft
+    evidence_level: C
+    domain: KM-07
+    definition: "A saját érzések, értékek, döntések és felelősség elkülönítése másokétól, kapcsolat fenntartása mellett."
+    claim: "A határ nem szükségképpen távolság vagy elutasítás; funkciója a szerepek, hozzáférés és felelősség tisztázása lehet."
+    not_evidence_of: ["önzés", "érzelmi leválás", "hogy minden konfliktus határprobléma"]
+    everyday_signals: ["a másik érzését saját kötelezettségként kezelem", "határnak nevezem a kommunikáció nélküli eltűnést"]
+    reflection_prompts: ["Mi tartozik itt a te döntésedhez és felelősségedhez, és mi a másik emberéhez?"]
+    decision_boundary: "Az ASRI segíthet szerepeket tisztázni, de nem írhat elő kapcsolatmegszakítást vagy közelséget."
+    source_ids: [SRC-031, SRC-035]
+    related_ids: [KO-017, KO-024]
+    notes: "A Bowen-féle konstrukció empirikus és kulturális státuszának további auditja szükséges."
+    last_reviewed: "2026-10-10"
+
+  - id: KO-026
+    title: "Dependency as adaptive or maladaptive pattern"
+    aliases: ["dependencia", "codependency audit node"]
+    status: draft
+    evidence_level: C
+    domain: KM-07
+    definition: "Másokra támaszkodás és segítségkérés olyan dimenziója, amely a kontextustól, rugalmasságtól és költségektől függően adaptív vagy maladaptív lehet."
+    claim: "A 'codependency' fogalma nem egységes diagnózis; csak konkrét relációs viselkedésekre bontva használható felelősen."
+    not_evidence_of: ["személyiségtípus", "betegség", "hogy másokra támaszkodni fejletlenség"]
+    everyday_signals: ["saját szükségletemet rendszeresen eltüntetem a kapcsolat fenntartásáért", "minden segítségkérést függőségnek nevezek"]
+    reflection_prompts: ["Pontosan milyen viselkedés ismétlődik, milyen funkciót szolgál, és milyen költséggel jár?"]
+    decision_boundary: "Az ASRI nem használhatja a codependent címkét diagnózisként és nem következtethet biztos korai fejlődési okra."
+    source_ids: [SRC-032, SRC-034, SRC-035]
+    related_ids: [KO-025, KO-027]
+    notes: "Weinhold seed literature: hipotézisgeneráló, nem kanonikus empirikus alap."
+    last_reviewed: "2026-10-10"
+
+  - id: KO-027
+    title: "Compulsive self-reliance and vulnerability avoidance"
+    aliases: ["counter-dependency", "kényszeres önellátás"]
+    status: draft
+    evidence_level: C
+    domain: KM-07
+    definition: "Az önállóság merev formája, amelyben a segítség, függés vagy érzelmi közelség aránytalan fenyegetésként jelenhet meg."
+    claim: "A 'counter-dependency' hasznos hipotézis lehet, de nem egységes mainstream konstruktum; rokon jelenségekre kell bontani."
+    not_evidence_of: ["kötődési diagnózis", "rejtett intimitásvágy bizonyossága", "hogy az önállóság probléma"]
+    everyday_signals: ["inkább aránytalan költséggel egyedül oldom meg", "a segítség elfogadását kontrollvesztésnek érzem"]
+    reflection_prompts: ["Ez most rugalmas önállóság, vagy azt szolgálja, hogy semmilyen függő helyzetet ne kelljen átélned?"]
+    decision_boundary: "Az ASRI csak mintahipotézist kínálhat; a személy dönt arról, felismeri-e magában."
+    source_ids: [SRC-033, SRC-035]
+    related_ids: [KO-024, KO-026]
+    notes: "Weinhold-fogalom; modern attachment/dependency irodalommal további keresztvalidálás szükséges."
+    last_reviewed: "2026-10-10"
+
+  - id: KO-028
+    title: "Conflict as information"
+    aliases: ["konfliktus mint információ"]
+    status: draft
+    evidence_level: D
+    domain: KM-07
+    definition: "A konfliktus olyan helyzet, amely láthatóvá tehet eltérő célokat, határokat, fenyegetésértékelést és automatikus kapcsolati stratégiákat."
+    claim: "A konfliktus adatforrás lehet a mintafelismeréshez, de nem minden konfliktus fejlődési lecke és nem minden fél felelőssége azonos."
+    not_evidence_of: ["kölcsönös felelősség minden esetben", "hogy bántalmazó helyzetben közös reflexió szükséges"]
+    everyday_signals: ["csak azt vizsgálom, ki nyert", "ugyanaz a reakció több kapcsolatban visszatér"]
+    reflection_prompts: ["Mit tett láthatóvá ez a konfliktus a célodról, határodról vagy automatikus válaszodról?"]
+    decision_boundary: "Biztonsági vagy bántalmazó helyzetben a rendszer nem erőltethet kölcsönösséget, megbékélést vagy önhibáztatást."
+    source_ids: [SRC-030, SRC-032]
+    related_ids: [KO-024, KO-025]
+    notes: "ASRI/Weinhold gyakorlati hipotézis; célzott empirikus audit szükséges."
+    last_reviewed: "2026-10-10"
+
+  - id: KO-029
+    title: "Shame and guilt distinction"
+    aliases: ["szégyen és bűntudat"]
+    status: stable
+    evidence_level: B
+    domain: KM-04
+    definition: "A bűntudat tipikusan egy viselkedés negatív értékelésére, a szégyen inkább az egész én negatív megélésére összpontosít; a kettő átfedhet."
+    claim: "A viselkedés és az egész személy elkülönítése segítheti a felelősségvállalást identitásmegsemmisítés nélkül."
+    not_evidence_of: ["egyetemes érzelmi határ", "hogy a bűntudat mindig hasznos", "hogy a szégyen mindig káros"]
+    everyday_signals: ["rosszat tettem helyett rossz ember vagyok", "a teljes én védelmében tagadom a konkrét cselekedetet"]
+    reflection_prompts: ["Pontosan melyik cselekedetet értékeled, és mit állítasz ebből az egész személyedről?"]
+    decision_boundary: "Az ASRI nem szégyeníthet és nem használhat erkölcsi érzelmet viselkedés kikényszerítésére."
+    source_ids: [SRC-036, SRC-041]
+    related_ids: [KO-007, KO-017]
+    last_reviewed: "2026-10-10"
+
+  - id: KO-030
+    title: "Intellectual humility and belief revision"
+    aliases: ["intellektuális alázat", "véleményfelülvizsgálat"]
+    status: stable
+    evidence_level: B
+    domain: KM-02
+    definition: "Saját tudás korlátainak és tévedés lehetőségének elismerése anélkül, hogy minden álláspontot egyformán bizonytalannak tekintenénk."
+    claim: "Az intellektuális alázat összeegyeztethető erős, bizonyítékarányos meggyőződéssel és megkönnyítheti a korrekciót."
+    not_evidence_of: ["önbizalomhiány", "relativizmus", "döntésképtelenség"]
+    everyday_signals: ["véleményváltozást vereségnek érzek", "bizonytalanságot színlelek ott is, ahol erős az evidencia"]
+    reflection_prompts: ["Mi az a konkrét új bizonyíték, amely mellett indokolt lenne módosítani az álláspontodat?"]
+    decision_boundary: "Az ASRI nem követelhet mesterséges semlegességet, és nem egyenlítheti ki az eltérő evidenciájú állításokat."
+    source_ids: [SRC-039, SRC-040]
+    related_ids: [KO-001, KO-005]
+    last_reviewed: "2026-10-10"
+
+  - id: KO-031
+    title: "Choice architecture and manipulation"
+    aliases: ["döntési környezet", "nudge", "boost"]
+    status: stable
+    evidence_level: A
+    domain: KM-08
+    definition: "A választási lehetőségek elrendezése befolyásolhatja a döntést; a boost ezzel szemben a döntési kompetenciát igyekszik növelni."
+    claim: "A döntési környezet sosem teljesen semleges, de a befolyás célja, átláthatósága és visszautasíthatósága etikailag lényeges."
+    not_evidence_of: ["hogy minden design manipuláció", "hogy a nudge mindig hatékony vagy jóindulatú"]
+    everyday_signals: ["az alapértelmezést saját aktív választásomnak érzem", "a könnyebb opciót bizonyítéknak veszem"]
+    reflection_prompts: ["Ki rendezte el a választásokat, milyen viselkedést könnyített meg, és milyen alternatívát tett kevésbé láthatóvá?"]
+    decision_boundary: "Az ASRI saját felületén sem használhat rejtett választásirányítást engagement vagy engedelmesség növelésére."
+    source_ids: [SRC-043, SRC-044, SRC-045]
+    related_ids: [KO-023, KO-032]
+    last_reviewed: "2026-10-10"
+
+  - id: KO-032
+    title: "Decision under uncertainty and feedback"
+    aliases: ["döntés bizonytalanságban", "outcome feedback"]
+    status: stable
+    evidence_level: A
+    domain: KM-08
+    definition: "Választás hiányos információ mellett, ahol a folyamat minősége és a későbbi eredmény nem azonos: jó döntésnek is lehet rossz kimenete."
+    claim: "A döntést az akkor elérhető információ és folyamat alapján, az eredményt pedig új adatként érdemes értékelni."
+    not_evidence_of: ["hogy a következmény lényegtelen", "hogy a rossz eredmény bizonyítja a rossz döntést"]
+    everyday_signals: ["mivel rosszul végződött, eleve rosszul döntöttem", "az eredmény után átírom, mennyire volt előre látható"]
+    reflection_prompts: ["Mit tudtál a döntés pillanatában, milyen valószínűségekkel számoltál, és mit tanít külön a kimenet?"]
+    decision_boundary: "Az ASRI segíthet a folyamat auditálásában, de nem vállalhatja át a kockázatot vagy a végső választást."
+    source_ids: [SRC-004, SRC-041, SRC-042]
+    related_ids: [KO-002, KO-014, KO-031]
+    last_reviewed: "2026-10-10"
+
