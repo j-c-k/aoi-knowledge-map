@@ -201,4 +201,35 @@ sources:
     citation: "Gollwitzer, P. M., & Sheeran, P. (2006). Implementation intentions and goal achievement: a meta-analysis. Advances in Experimental Social Psychology, 38, 69–119."
     url: "https://doi.org/10.1016/S0065-2601(06)38002-1"
     type: meta_analysis
-
+  - id: SRC-051
+    citation: "Kross, E. (2009). When the self becomes other: toward an integrative understanding of the processes distinguishing adaptive self-reflection from rumination. Annals of the New York Academy of Sciences, 1167, 35–40."
+    url: "https://doi.org/10.1111/j.1749-6632.2009.04545.x"
+    type: integrative_review
+  - id: SRC-052
+    citation: "Murdoch, E. M., Chapman, M. T., Crane, M., & Gucciardi, D. F. (2023). The effectiveness of self-distanced versus self-immersed reflections among adults: systematic review and meta-analysis. Stress and Health, 39, 255–271."
+    url: "https://doi.org/10.1002/smi.3199"
+    type: systematic_review_meta_analysis
+  - id: SRC-053
+    citation: "Erbas, Y. et al. (2019). Emotion differentiation dissected: between-category, within-category, and integral emotion differentiation, and their relation to well-being. Cognition and Emotion, 33, 258–271."
+    url: "https://doi.org/10.1080/02699931.2018.1465894"
+    type: multi_dataset_meta_analysis
+  - id: SRC-054
+    citation: "Thompson, R. J. et al. (2021). Gaining clarity about emotion differentiation. Social and Personality Psychology Compass, 15, e12584."
+    url: "https://doi.org/10.1111/spc3.12584"
+    type: methodological_review
+  - id: SRC-055
+    citation: "Cheng, C., Cheung, S. F., Chio, J. H., & Chan, M. P. S. (2013). Cultural meaning of perceived control: a meta-analysis of locus of control and psychological symptoms across 18 cultural regions. Psychological Bulletin, 139, 152–188."
+    url: "https://doi.org/10.1037/a0028596"
+    type: meta_analysis
+  - id: SRC-056
+    citation: "Calatrava, M. et al. (2022). Differentiation of self: a scoping review of Bowen Family Systems Theory's core construct. Clinical Psychology Review, 91, 102101."
+    url: "https://doi.org/10.1016/j.cpr.2021.102101"
+    type: scoping_review
+  - id: SRC-057
+    citation: "Molina, E., Taiwo, A., & Grey, B. (2026). Co-Dependency Revisited: An Integrative Review of Conceptualisations and Mental Health Outcomes. Clinical Psychology & Psychotherapy, 33, e70265."
+    url: "https://doi.org/10.1002/cpp.70265"
+    type: integrative_systematic_review
+  - id: SRC-058
+    citation: "Overall, N. C., & McNulty, J. K. (2017). What type of communication during conflict is beneficial for intimate relationships? Current Opinion in Psychology, 13, 1–5."
+    url: "https://doi.org/10.1016/j.copsyc.2016.03.002"
+    type: research_review
