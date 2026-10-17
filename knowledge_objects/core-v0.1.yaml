@@ -19,19 +19,19 @@ objects:
   - id: KO-002
     title: "Metacognitive reflection cycle"
     aliases: ["reflexiós ciklus"]
-    status: draft
+    status: stable
     evidence_level: B
     domain: KM-01
     definition: "Megfigyelés, kérdezés, értelmezés, kipróbálás és újraértékelés ismétlődő folyamata, amely a tapasztalatot tanulási adattá alakítja."
-    claim: "A reflexió akkor több puszta rágódásnál, ha konkrét eseményhez, vizsgálható feltevéshez és későbbi visszacsatoláshoz kapcsolódik."
+    claim: "A reflexió akkor különíthető el legjobban a repetitív ruminációtól, ha új megkülönböztetést, vizsgálható feltevést, perspektívaváltást vagy későbbi visszacsatolást hoz; az öneltávolított nézőpont átlagosan kis előnyt mutat, de az evidencia bizonytalan."
     not_evidence_of: ["hogy több önvizsgálat mindig jobb", "hogy minden esemény mély rejtett jelentést hordoz"]
     everyday_signals: ["ugyanazt az eseményt ismétlem új adat nélkül", "egy felismerést kipróbálható kérdéssé alakítok"]
     reflection_prompts: ["Mi az az egy megfigyelés, amely a következő hasonló helyzetben ellenőrizhető?"]
     decision_boundary: "A ciklus szerkezetet ad; nem határozza meg, milyen következtetésre vagy választásra kell jutni."
-    source_ids: [SRC-001, SRC-002]
+    source_ids: [SRC-002, SRC-051, SRC-052]
     related_ids: [KO-001, KO-032]
-    notes: "ASRI-szintézis; v0.2-ben külön ruminációs határaudit szükséges."
-    last_reviewed: "2026-10-10"
+    notes: "A stable státusz a folyamat-határra vonatkozik, nem arra, hogy az öneltávolítás mindenkinél vagy minden helyzetben előnyös."
+    last_reviewed: "2026-10-17"
 
   - id: KO-003
     title: "Fact–inference–belief–value separation"
@@ -148,19 +148,19 @@ objects:
   - id: KO-010
     title: "Emotional awareness and differentiation"
     aliases: ["érzelmi tudatosság", "emotion differentiation"]
-    status: draft
+    status: stable
     evidence_level: B
     domain: KM-04
     definition: "Az aktuális érzelmi állapot és annak árnyalatainak felismerése, megnevezése és elkülönítése a hozzá kapcsolódó gondolattól."
-    claim: "A pontosabb érzelmi megkülönböztetés több szabályozási lehetőséget támogathat, de a címke pontossága kontextus- és mérésfüggő."
+    claim: "A pontosabb érzelmi megkülönböztetés több adatforrásban együtt jár jobb alkalmazkodással, de a hatás mértéke, iránya és mérési módja változó; a címkézés önmagában nem bizonyított általános beavatkozás."
     not_evidence_of: ["hogy az érzés oka ismert", "hogy a megnevezés önmagában megoldja a helyzetet"]
     everyday_signals: ["csak azt tudom, hogy rossz", "az érzést és az eseményről alkotott ítéletet ugyanannak veszem"]
     reflection_prompts: ["Mi az érzés neve, mi a testi jel, és mi az ehhez kapcsolt történet?"]
     decision_boundary: "Az ASRI kínálhat szókincset, de nem közölheti kívülről, mit érez valójában a személy."
-    source_ids: [SRC-012, SRC-014]
+    source_ids: [SRC-012, SRC-053, SRC-054]
     related_ids: [KO-011, KO-012]
-    notes: "További kulturális és mérési audit szükséges."
-    last_reviewed: "2026-10-10"
+    notes: "A konstrukció használható, de az ASRI nem következtet mentális állapotra pusztán szöveges érzelemszókincsből."
+    last_reviewed: "2026-10-17"
 
   - id: KO-011
     title: "Emotion as data, not proof"
@@ -286,10 +286,10 @@ objects:
     everyday_signals: ["ha eléggé akarom, biztosan irányíthatom", "semmi közöm az eredményhez"]
     reflection_prompts: ["Melyik elemre van mérhető ráhatásod, melyikre nincs, és melyik bizonytalan?"]
     decision_boundary: "Az ASRI nem taníthat totális személyes kontrollt, és nem használhatja a fogalmat strukturális korlátok tagadására."
-    source_ids: [SRC-047, SRC-048]
+    source_ids: [SRC-047, SRC-048, SRC-055]
     related_ids: [KO-015, KO-017]
-    notes: "A globális kontrollhely mérésének és kulturális érvényességének további auditja szükséges."
-    last_reviewed: "2026-10-10"
+    notes: "A kultúra moderálhatja az észlelt kontroll és pszichológiai tünetek kapcsolatát; egyéni személyre nem vihető át régiószintű átlag."
+    last_reviewed: "2026-10-17"
 
   - id: KO-019
     title: "Autonomous versus controlled motivation"
@@ -392,7 +392,7 @@ objects:
     title: "Boundaries and differentiation"
     aliases: ["határok", "differentiation of self"]
     status: draft
-    evidence_level: C
+    evidence_level: B
     domain: KM-07
     definition: "A saját érzések, értékek, döntések és felelősség elkülönítése másokétól, kapcsolat fenntartása mellett."
     claim: "A határ nem szükségképpen távolság vagy elutasítás; funkciója a szerepek, hozzáférés és felelősség tisztázása lehet."
@@ -400,16 +400,16 @@ objects:
     everyday_signals: ["a másik érzését saját kötelezettségként kezelem", "határnak nevezem a kommunikáció nélküli eltűnést"]
     reflection_prompts: ["Mi tartozik itt a te döntésedhez és felelősségedhez, és mi a másik emberéhez?"]
     decision_boundary: "Az ASRI segíthet szerepeket tisztázni, de nem írhat elő kapcsolatmegszakítást vagy közelséget."
-    source_ids: [SRC-031, SRC-035]
+    source_ids: [SRC-031, SRC-035, SRC-056]
     related_ids: [KO-017, KO-024]
-    notes: "A Bowen-féle konstrukció empirikus és kulturális státuszának további auditja szükséges."
-    last_reviewed: "2026-10-10"
+    notes: "Számos korrelációs vizsgálat támogat kapcsolatot pszichológiai és kapcsolati kimenetekkel, de a kauzalitás, stabilitás és beavatkozhatóság nagyrészt tisztázatlan."
+    last_reviewed: "2026-10-17"
 
   - id: KO-026
     title: "Dependency as adaptive or maladaptive pattern"
     aliases: ["dependencia", "codependency audit node"]
     status: draft
-    evidence_level: C
+    evidence_level: B
     domain: KM-07
     definition: "Másokra támaszkodás és segítségkérés olyan dimenziója, amely a kontextustól, rugalmasságtól és költségektől függően adaptív vagy maladaptív lehet."
     claim: "A 'codependency' fogalma nem egységes diagnózis; csak konkrét relációs viselkedésekre bontva használható felelősen."
@@ -417,10 +417,10 @@ objects:
     everyday_signals: ["saját szükségletemet rendszeresen eltüntetem a kapcsolat fenntartásáért", "minden segítségkérést függőségnek nevezek"]
     reflection_prompts: ["Pontosan milyen viselkedés ismétlődik, milyen funkciót szolgál, és milyen költséggel jár?"]
     decision_boundary: "Az ASRI nem használhatja a codependent címkét diagnózisként és nem következtethet biztos korai fejlődési okra."
-    source_ids: [SRC-032, SRC-034, SRC-035]
+    source_ids: [SRC-032, SRC-034, SRC-035, SRC-057]
     related_ids: [KO-025, KO-027]
-    notes: "Weinhold seed literature: hipotézisgeneráló, nem kanonikus empirikus alap."
-    last_reviewed: "2026-10-10"
+    notes: "Weinhold seed literature: hipotézisgeneráló. A 2026-os integratív review megerősíti a fogalmi töredezettséget és a relációs mintaként való óvatos használatot, nem diagnosztikus státuszt."
+    last_reviewed: "2026-10-17"
 
   - id: KO-027
     title: "Compulsive self-reliance and vulnerability avoidance"
@@ -443,7 +443,7 @@ objects:
     title: "Conflict as information"
     aliases: ["konfliktus mint információ"]
     status: draft
-    evidence_level: D
+    evidence_level: C
     domain: KM-07
     definition: "A konfliktus olyan helyzet, amely láthatóvá tehet eltérő célokat, határokat, fenyegetésértékelést és automatikus kapcsolati stratégiákat."
     claim: "A konfliktus adatforrás lehet a mintafelismeréshez, de nem minden konfliktus fejlődési lecke és nem minden fél felelőssége azonos."
@@ -451,10 +451,10 @@ objects:
     everyday_signals: ["csak azt vizsgálom, ki nyert", "ugyanaz a reakció több kapcsolatban visszatér"]
     reflection_prompts: ["Mit tett láthatóvá ez a konfliktus a célodról, határodról vagy automatikus válaszodról?"]
     decision_boundary: "Biztonsági vagy bántalmazó helyzetben a rendszer nem erőltethet kölcsönösséget, megbékélést vagy önhibáztatást."
-    source_ids: [SRC-030, SRC-032]
+    source_ids: [SRC-030, SRC-032, SRC-058]
     related_ids: [KO-024, KO-025]
-    notes: "ASRI/Weinhold gyakorlati hipotézis; célzott empirikus audit szükséges."
-    last_reviewed: "2026-10-10"
+    notes: "A konfliktus-kommunikáció kontextusfüggő kutatása alátámasztja az információértéket, de nem igazolja a teljes Weinhold-értelmezési keretet."
+    last_reviewed: "2026-10-17"
 
   - id: KO-029
     title: "Shame and guilt distinction"
@@ -519,4 +519,3 @@ objects:
     source_ids: [SRC-004, SRC-041, SRC-042]
     related_ids: [KO-002, KO-014, KO-031]
     last_reviewed: "2026-10-10"
-
