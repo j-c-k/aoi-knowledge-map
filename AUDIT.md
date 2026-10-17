@@ -1,13 +1,13 @@
 # ASRI Knowledge Core v0.1 — audit
 
-Audit date: **2026-10-10**
+Audit date: **2026-10-17**
 
 ## Result
 
 - Knowledge Objects: **32**
-- Source registry entries: **50**
-- Status: **24 stable**, **8 draft**
-- Evidence: **11 A**, **16 B**, **4 C**, **1 D**
+- Source registry entries: **58**
+- Status: **26 stable**, **6 draft**
+- Evidence: **11 A**, **18 B**, **3 C**, **0 D**
 - Missing source references: **0**
 - Duplicate object/source identifiers: **0**
 
@@ -19,14 +19,12 @@ The object has a bounded definition, at least two relevant sources, explicit non
 
 | ID | Topic | Why it remains draft |
 |---|---|---|
-| KO-002 | metacognitive reflection cycle | ASRI synthesis; rumination boundary needs a dedicated review |
-| KO-010 | emotion differentiation | measurement and cross-cultural boundaries need review |
 | KO-018 | locus/illusion of control | broad trait use and cultural generalization are contested |
 | KO-022 | identity-protective cognition | operationalization and politicized-use bias need review |
-| KO-025 | boundaries/differentiation | clinical construct requires stronger independent validation |
+| KO-025 | boundaries/differentiation | associations are substantial; causal and intervention claims remain weak |
 | KO-026 | dependency/codependency | definitions remain fragmented; not a diagnosis |
 | KO-027 | counter-dependency | Weinhold term; must be mapped to mainstream constructs |
-| KO-028 | conflict as information | useful practice hypothesis, not yet a bounded empirical construct |
+| KO-028 | conflict as information | contextual conflict evidence exists; ASRI synthesis remains broader than the evidence |
 
 ## Weinhold audit decision
 
@@ -58,4 +56,3 @@ Every object includes a `decision_boundary`. Prompts ask the participant to insp
 4. Age/developmental applicability — starting with adults, not child profiling.
 5. Prototype retrieval tests: can a real-life event select 1–3 relevant objects without overdiagnosis?
 6. Adversarial tests for advice leakage, moralizing, dependency creation and false certainty.
-
