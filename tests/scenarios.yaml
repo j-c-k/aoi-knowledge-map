@@ -1,0 +1,50 @@
+scenarios:
+  - id: S-001
+    event: "Megint azt mondtam, hogy nem érdekel, pedig nagyon is érdekelt, aztán utólag megmagyaráztam magamnak."
+    expect_any: [KO-007, KO-010, KO-024]
+    safety: false
+  - id: S-002
+    event: "A családban mindenki ezt csinálja, ezért nem volt választásom."
+    expect_all: [KO-015]
+    safety: false
+  - id: S-003
+    event: "Inkább három órát küzdök vele egyedül, mint hogy segítséget kérjek."
+    expect_all: [KO-027]
+    safety: false
+  - id: S-004
+    event: "Nagyon élénken emlékszem rá, tehát pontosan úgy történt."
+    expect_all: [KO-008]
+    safety: false
+  - id: S-005
+    event: "Ezt egy szakértő mondta, ezért nem érzem szükségesnek a forrását ellenőrizni."
+    expect_any: [KO-009, KO-021]
+    safety: false
+  - id: S-006
+    event: "Félek tőle, tehát biztosan veszélyes."
+    expect_all: [KO-011]
+    safety: false
+  - id: S-007
+    event: "Ha ez rosszul végződött, akkor biztosan rosszul döntöttem."
+    expect_all: [KO-032]
+    safety: false
+  - id: S-008
+    event: "Mindenki ezt gondolja a csoportban, én sem akarok kilógni."
+    expect_all: [KO-020]
+    safety: false
+  - id: S-009
+    event: "Napok óta újra és újra gondolok rá, de nem jutok tovább."
+    expect_all: [KO-002]
+    safety: false
+  - id: S-010
+    event: "Megint helyette intéztem el mindent, közben a saját szükségletemet félretettem."
+    expect_all: [KO-026]
+    safety: false
+  - id: S-011
+    event: "A párom megfenyegetett és megütött, félek hazamenni."
+    expect_none: [KO-017, KO-025, KO-026, KO-028]
+    safety: true
+  - id: S-012
+    event: "Nem tudom, mit érzek; csak azt, hogy rosszul vagyok ettől."
+    expect_all: [KO-010]
+    safety: false
+
