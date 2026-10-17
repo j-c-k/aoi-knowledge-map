@@ -1,0 +1,69 @@
+profiles:
+  KO-002:
+    terms: ["ujra es ujra gondolok", "ragodom", "ruminal", "korbe korbe", "nem jutok tovabb", "onvizsgalat"]
+  KO-003:
+    terms: ["teny", "biztosan", "szerintem", "kovetkeztetes", "velemeny", "hit", "ertek"]
+  KO-005:
+    terms: ["csak azt olvasom", "megerosit", "ellenpelda", "nekem ad igazat", "bizonyitek ellen"]
+  KO-006:
+    terms: ["ugyanezt elfogadnam", "nekem kedvez", "akarom hogy igaz legyen", "mas merce", "elfogult"]
+  KO-007:
+    terms: ["utolag", "megmagyarazom", "kifogas", "ellentmond", "igazolom", "racionaliz"]
+  KO-008:
+    terms: ["emlekszem", "emlek", "regen tortent", "pontosan ugy volt", "felidez"]
+  KO-009:
+    terms: ["nem tudom honnan", "hallottam", "forras", "valaki mondta", "olvastam"]
+  KO-010:
+    terms: ["nem tudom mit erzek", "rosszul erzem", "duhos", "szomoru", "szegyen", "felelem", "erzes"]
+  KO-011:
+    terms: ["erzem tehát", "felek tehát", "megkonnyebbultem", "biztos veszely", "biztosan veszelyes", "az erzesem bizonyitja"]
+  KO-013:
+    terms: ["azonnal", "impulzus", "nem birtam megallni", "automatikusan reagaltam", "kicsuszott"]
+  KO-014:
+    terms: ["mindig ugyanaz", "megszokas", "rutin", "automatikusan", "ujra megteszem"]
+  KO-015:
+    terms: ["nem volt valasztasom", "ra kenem", "miatt tettem", "sors", "isten akarta", "dönthettem"]
+  KO-017:
+    terms: ["hibaja", "miatta", "felelos", "korulmeny", "nem tehetek rola", "ilyen ember"]
+  KO-018:
+    terms: ["minden rajtam mulik", "semmi rahatasom", "iranyitani", "kontroll", "tehetetlen"]
+  KO-019:
+    terms: ["muszaj", "elvarjak", "szegyenlenem", "nyomas", "en akarom", "kotelesseg"]
+  KO-020:
+    terms: ["mindenki ezt gondolja", "tobbseg", "beilleszked", "csoport", "masok elott", "konform"]
+  KO-021:
+    terms: ["szakerto mondta", "fonok mondta", "tekintely", "parancs", "vezető", "engedelmes"]
+  KO-022:
+    terms: ["mi fajtank", "az en csoportom", "tamadas ellenunk", "arulas", "politikai oldal", "identitas"]
+  KO-023:
+    terms: ["reklam", "meggyoz", "befolyasol", "influenszer", "igeret", "tetszett az uzenet"]
+  KO-024:
+    terms: ["elhagy", "kozel kerul", "tavolsag", "megerosites kell", "kapaszkodom", "intimitas"]
+  KO-025:
+    terms: ["hatar", "nemet mond", "az o erzese", "az en felelossegem", "magamra veszem", "hozzaferes"]
+  KO-026:
+    terms: ["megment", "helyette", "felaldozom", "sajat szukseglet", "gondoskodom rola", "fuggoseg"]
+  KO-027:
+    terms: ["nem kerek segitseget", "segitseget kerjek", "egyedul oldom", "egyedul", "nem fuggok", "gyengeseg segitseget", "kiszolgaltatott"]
+  KO-028:
+    terms: ["osszeveszt", "konfliktus", "vita", "veszekedes", "kritika", "hallgatassal buntet"]
+  KO-029:
+    terms: ["rossz ember vagyok", "szegyenlem magam", "buntudat", "megbocsathatatlan", "hibaztam"]
+  KO-030:
+    terms: ["tevedhetek", "meggondoltam magam", "nem tudom", "uj bizonyitek", "velemenyt valtoztat"]
+  KO-031:
+    terms: ["alapertelmezett", "apró betu", "valasztasi lehetoseg", "rábeszél", "nudge", "elrejtett opcio"]
+  KO-032:
+    terms: ["rosszul vegzodott", "kimenet", "kockazat", "nem tudhattam", "elore lathato", "bizonytalan"]
+
+safety_terms:
+  - "bantalmaz"
+  - "eroszak"
+  - "megut"
+  - "fenyeget"
+  - "kenyszerit"
+  - "bezart"
+  - "veszelyben vagyok"
+  - "felek hazamenni"
+
+safety_excluded_objects: [KO-017, KO-025, KO-026, KO-028]
